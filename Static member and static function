@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+class Hero
+{
+    public:
+
+    static int age;
+
+    static int random()
+    {
+        return age;
+    }
+
+};
+
+int Hero::age =16;
+
+int main()
+{
+    cout<<Hero::random();
+    return 0;
+}
