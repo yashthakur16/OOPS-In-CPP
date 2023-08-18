@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class Sample
+{
+    public:
+    string name;
+    int age;
+
+    //Default constructor
+
+    Sample()
+    {
+        cout<<"Default Constructor called "<<endl;
+    }
+
+    //Parameterised constructor
+
+    Sample(int age,string name)
+    {
+       this -> age = age;
+       this -> name = name;
+    }
+
+};
+
+int main()
+{
+    //Sample S;
+    Sample S(16,"Yash");
+    Sample copy(S);
+    cout<<copy.age<<endl;
+}
