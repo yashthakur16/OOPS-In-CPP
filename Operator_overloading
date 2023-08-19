@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+class B
+{
+    public:
+    int a=4;
+
+    void operator() ()
+    {
+        cout<<"My name is + operator ";
+    }
+};
+
+
+int main()
+{
+    B obj;
+    obj();
+}
