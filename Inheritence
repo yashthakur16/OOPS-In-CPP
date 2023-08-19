@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+class parent
+{
+    public:
+    int age=16;
+    string name="Yash";
+};
+
+class child : public parent
+{
+
+};
+
+int main()
+{
+    child *c = new child;
+    cout<<"The name of the person "<<c->name;
+    cout<<" and age is "<<(*c).age;
+    return 0;
+}
